@@ -1,0 +1,7 @@
+Objective of djtfs project:
+....................................
+1)Joda-time-2.0.jar
+E:\SOFTWER\Netbeans
+2)JCalendar jarfile
+
+E:\SOFTWER\Netbeans\JCalendar jarfile

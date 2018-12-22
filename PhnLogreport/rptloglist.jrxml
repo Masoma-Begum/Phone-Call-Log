@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="MLIparam1" class="java.lang.String"/>
+	<field name="Number" class="java.lang.String"/>
+	<field name="connection" class="java.lang.String"/>
+	<field name="calltime" class="java.lang.String"/>
+	<field name="duration" class="java.lang.String"/>
+	<field name="bill" class="java.lang.Integer"/>
+	<field name="calldate" class="java.lang.String"/>
+	<field name="sttime" class="java.lang.String"/>
+	<field name="endtime" class="java.lang.String"/>
+	<field name="host" class="java.lang.String"/>
+	<field name="port" class="java.lang.String"/>
+	<field name="msgNO" class="java.lang.String"/>
+	<field name="usrName" class="java.lang.String"/>
+	<field name="msgPass" class="java.lang.String"/>
+	<field name="Photo" class="java.lang.Byte"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="217" y="0" width="136" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Mobile Log Information]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="555" height="21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{MLIparam1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="37" height="20"/>
+				<textElement/>
+				<text><![CDATA[Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="0" width="49" height="20"/>
+				<textElement/>
+				<text><![CDATA[connection]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="0" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[calltime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="0" width="40" height="20"/>
+				<textElement/>
+				<text><![CDATA[duration]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="168" y="0" width="19" height="20"/>
+				<textElement/>
+				<text><![CDATA[bill]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="0" width="41" height="20"/>
+				<textElement/>
+				<text><![CDATA[calldate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="32" height="20"/>
+				<textElement/>
+				<text><![CDATA[sttime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="0" width="39" height="20"/>
+				<textElement/>
+				<text><![CDATA[endtime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="0" width="32" height="20"/>
+				<textElement/>
+				<text><![CDATA[host]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="331" y="0" width="22" height="20"/>
+				<textElement/>
+				<text><![CDATA[port]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="0" width="42" height="20"/>
+				<textElement/>
+				<text><![CDATA[msgNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="0" width="55" height="20"/>
+				<textElement/>
+				<text><![CDATA[usrName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="0" width="42" height="20"/>
+				<textElement/>
+				<text><![CDATA[msgPass]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="492" y="0" width="63" height="20"/>
+				<textElement/>
+				<text><![CDATA[Photo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="37" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="0" width="49" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{connection}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="86" y="0" width="41" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{calltime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="127" y="0" width="41" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{duration}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="0" width="32" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{bill}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="0" width="41" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{calldate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="0" width="43" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{sttime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="39" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{endtime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="0" width="32" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{host}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="331" y="0" width="22" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{port}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="353" y="0" width="42" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{msgNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="55" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{usrName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="42" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{msgPass}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="492" y="0" width="63" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Photo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="34" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="34" width="96" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="477" y="34" width="56" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

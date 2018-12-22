@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="MLIparam1" class="java.lang.String"/>
+	<field name="Number" class="java.lang.Number"/>
+	<field name="connection" class="java.lang.String"/>
+	<field name="Tmin" class="java.lang.String"/>
+	<field name="Tsec" class="java.lang.String"/>
+	<field name="Tstart" class="java.lang.String"/>
+	<field name="Tend" class="java.lang.String"/>
+	<field name="Duration" class="java.lang.String"/>
+	<field name="Bill" class="java.lang.String"/>
+	<field name="host" class="java.lang.String"/>
+	<field name="port" class="java.lang.String"/>
+	<field name="username" class="java.lang.String"/>
+	<field name="password" class="java.lang.String"/>
+	<field name="Message" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="217" y="0" width="136" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Mobile Log Information]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="555" height="21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{MLIparam1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="76" height="20"/>
+				<textElement/>
+				<text><![CDATA[Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="76" y="2" width="88" height="20"/>
+				<textElement/>
+				<text><![CDATA[connection]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="245" y="0" width="83" height="22"/>
+				<textElement/>
+				<text><![CDATA[Tmin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="166" y="0" width="79" height="22"/>
+				<textElement/>
+				<text><![CDATA[Tsec]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="0" width="74" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tstart]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="77" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tend]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="477" y="2" width="75" height="20"/>
+				<textElement/>
+				<text><![CDATA[Duration]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="76" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="76" y="0" width="88" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{connection}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="243" y="0" width="83" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tmin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="0" width="79" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tsec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="0" width="72" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tstart}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="77" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Tend}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="0" width="74" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Duration}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="34" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
